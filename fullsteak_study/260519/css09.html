@@ -16,12 +16,22 @@
         
         @keyframes RedToBlue {
             from {
-                background-color: red;
+                background-color: red; /* 시작 부분 */
             } to {
-                background-color: blue;
+                background-color: blue; /* 끝 부분 */
             }
         }
 
+        @keyframes RedToYellow {
+            from {
+                background-color: red;
+            } to {
+                background-color: yellow;
+            }
+        }
+
+
+        /* keyframes (animation-name) { from { 초기 설정값 } to { 변경할 설정값 }} */
 
         .anima1:hover {
             animation-name: RedToBlue;
@@ -29,6 +39,14 @@
             /* 반복 횟수 */
             animation-iteration-count: 3;
         }
+
+
+        .amima2:hover {
+            animation-name: RedToYellow;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
     </style>
 </head>
 <body>
