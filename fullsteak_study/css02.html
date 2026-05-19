@@ -19,6 +19,15 @@
         div > p + span {
             color: red;
         }
+
+        div > p ~ span {
+            color: lightgreen;
+        }
+
+        /* 네이버 링크에 마우스를 올려놓으면 배경을 초록색으로 변경 */
+        a[href='http://www.naver.com']:hover {
+            background-color: green;
+        }
     </style>
 </head>
 <body>
