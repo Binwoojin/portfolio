@@ -28,6 +28,20 @@
         a[href='http://www.naver.com']:hover {
             background-color: green;
         }
+
+        /* 의사클래스 (seudo class) 
+            :hover - 마우스 포인터가 요소 위에 올라가 있으면 선택
+            :active - 사용자가 활성화된 요소를 나타낸다
+            :visited - 한 번이라도 방문한 적이 있는 링크를 나타낸다
+            :link - 아직 방문하지 않은 요소를 나타낸다
+            :focus - 입력양신 칸에 포커스를 받은 요소 
+        */
+
+        /* 입력창에 포커스가 가면 배경색을 핑크색, 테투리를 빨강색 보더값 1px */
+        input[type="text"]:focus {
+            background-color: pink;
+            border: 1px solid red;
+        }
     </style>
 </head>
 <body>
