@@ -23,15 +23,18 @@
         }
 
         @keyframes RedToYellow {
-            from {
+            0% {
                 background-color: red;
-            } to {
+            } 50% {
                 background-color: yellow;
+            } 100% {
+                background-color: blue;
             }
         }
 
 
-        /* keyframes (animation-name) { from { 초기 설정값 } to { 변경할 설정값 }} */
+        /* keyframes (animation-name) { from { 초기 설정값 } to { 변경할 설정값 }} 
+            from(0%) - to(100%), 0%부터 100%까지 퍼센트 단위별로도 설정할 수 있다. */
 
         .anima1:hover {
             animation-name: RedToBlue;
