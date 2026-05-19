@@ -35,6 +35,35 @@
             float: left;
         }
 
+        /* float - 신문이나 잡지 레이아웃처럼 이미지를 텍스트 본문 한 쪽에 띄어주고 
+                   그 주변에 텍스트가 자연스럽게 흐르도록 */
+
+        #footer {
+            clear: both; 
+            height: 200px;
+        }
+
+        /* clear: both; - float 효과를 상쇄 */
+
+        .button {
+            padding: 10px 20px;
+            border: 1px solid lemonchiffon;
+            background-color: lemonchiffon;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color: lightskyblue;
+            color: lemonchiffon;
+        }
+
+        .button:active {
+            background-color: lightskyblue;
+            color: black;
+            position: relative;
+            top: 3px;
+        }
     </style>
 </head>
 <body>
@@ -44,11 +73,11 @@
                 <img src="naver.png" alt="naver logo">
             </div>
             <div id="nav">
-                <a href="#">HOME</a>
-                <a href="#">NEWS</a>
-                <a href="#">SHOPPING</a>
-                <a href="#">BLOG</a>
-                <a href="#">CAFE</a>
+                <a class="button" href="#">NEWS</a>
+                <a class="button" href="#">HOME</a>
+                <a class="button" href="#">SHOPPING</a>
+                <a class="button" href="#">BLOG</a>
+                <a class="button" href="#">CAFE</a>
             </div>
         </div>
         <div id="sidebar1">
