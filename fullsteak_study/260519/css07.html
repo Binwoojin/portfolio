@@ -29,6 +29,20 @@
             /* transform: scaleY(2); */
             /* scaleX(n) : n배만큼 x축 방향으로 커짐 | scaleY(n) : n배만큼 y축 방향으로 커짐 */
         }
+
+
+        .img3:hover {
+            /* transform: rotateX(180deg); */
+            /* transform: rotateY(180deg); */
+            transform: rotateZ(180deg);
+            /* rotateX(n(deg)) : x축 방향으로 n도 각도만큼 회전 | rotateY(n(deg)) : y축 방향으로 n도 각도만큼 회전 | rotateZ(n(deg)) : z축 방향으로 n도 각도만큼 회전 */
+            /* +deg : 시계 방향 | -deg : 반시계 방향 */
+        }
+
+        .img4:hover {
+            transform: skewX(45deg);
+            /* skewX(n(deg)) : x축 방향으로 n도 각도만큼 왜곡 | skewY(n(deg)) : y축 방향으로 n도 각도만큼 왜곡 */
+        }
     </style>
 </head>
 <body>
@@ -38,6 +52,14 @@
 
     <div class="box">
         <img class="img2" src="document (1).jpeg" alt="">
+    </div>
+
+    <div class="box">
+        <img class="img3" src="document (1).jpeg" alt="">
+    </div>
+
+    <div class="box">
+        <img class="img4" src="document (1).jpeg" alt="">
     </div>
 </body>
 </html>
