@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .shape {
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-top: 100px;
+        }
+        
+        @keyframes RedToBlue {
+            from {
+                background-color: red;
+            } to {
+                background-color: blue;
+            }
+        }
+
+
+        .anima1:hover {
+            animation-name: RedToBlue;
+            animation-duration: 3s;
+            /* 반복 횟수 */
+            animation-iteration-count: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="shape anima1"></div>
+        <div class="shape anima2"></div>
+        <div class="shape anima3"></div>
+    </div>
+
+    <!-- animation A -> B로 변환할 떄 자연스럽게 요소에 적용되는 CSS 스타일을 다른 CSS 스타일로 부드럽게 전환시켜 주는 것
+        이 때, CSS 스타일이 변환되는 중간지점을 키프레임 이라고 한다. -->
+</body>
+</html>
