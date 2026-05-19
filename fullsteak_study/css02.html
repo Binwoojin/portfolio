@@ -10,6 +10,15 @@
             /* 글자 중앙 정렬 */
             text-align: center;
         }
+        /* 자손 선택자 */
+        div > p {
+            background-color: pink;
+        }
+
+        /* 강백호만 글자를 붉은색 : p + span - p태그 뒤에 인접한 형제 span 하나 */
+        div > p + span {
+            color: red;
+        }
     </style>
 </head>
 <body>
