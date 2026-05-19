@@ -37,11 +37,22 @@
             :focus - 입력양신 칸에 포커스를 받은 요소 
         */
 
-        /* 입력창에 포커스가 가면 배경색을 핑크색, 테두리를 빨강색 보더값 1px */
+        /* id가 test인 요소는 너비가 30px, 높이가 30px 배경 초록색 */
+        #test {
+            width: 30px;
+            height: 30px;
+            background-color: green;
+        }
+
+        /* id가 test인 요소에 마우스가 올라가면 배경이 red로 변경 */
+        #test:hover {
+            background-color: red;
+        }
+
+        /* 입력창에 포커스가 가면 배경색을 핑크색, 텍스트 색상을 빨강색 */
         input:focus {
             background-color: pink;
-            border: none;
-            border: 1px solid red;
+            color: red;
         }
     </style>
 </head>
