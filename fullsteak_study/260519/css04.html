@@ -4,6 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        img {
+            width: 480px;
+            height: 400px;            
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 900px;
+            height: 1000px;
+            background-color: #efefef;
+        }
+
+        .img_area, .login_area {
+            width: 50%;
+        }
+
+        .img_area {
+            background-color: lightyellow;
+        }
+
+        .login_area {
+            background-color: lightgray;
+        }
+    </style>
 </head>
 <body>
     <!-- 왼쪽에는 이미지 사진, 오른쪽에는 로그인 폼(아이디, 비밀번호, 버튼 2개(로그인, 회원가입)) 작성 -->
@@ -13,8 +38,11 @@
             <img src="IMG_0285.png" alt="Chiikawa">
         </div>
         <div class="login_area">
-            <span>ID : </span><input type="text" name="id" id="id" placeholder="아이디를 입력하세요."><br>
-            <span>PW : </span><input type="password" name="pw" id="pw"><br>
+            <label for="id">ID : </label>
+            <input type="text" name="id" id="id" placeholder="아이디를 입력하세요."><br>
+
+            <label for="pw">PW : </label>
+            <input type="password" name="pw" id="pw"><br>
 
             <button class="login">로그인</button>
             <button class="join">회원가입</button>
