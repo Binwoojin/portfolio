@@ -23,7 +23,19 @@
             transition-timing-function: ease-in;
         }
 
+        /* linear : 시작과 끝의 속도가 일정 | ease-in : 천천히 시작했다가 완료될 때 속도가 증가 | ease-out : 빠르게 시작했다가 완료될 때 속도가 감소 */
+
         .img1:hover {
+            width: 300px;
+            height: 300px;
+        }
+
+        .img2 {
+            transition: all 2s ease-in, 1s; 
+            /* property, duration, timing-function, delay */
+        }
+
+        .img2:hover {
             width: 300px;
             height: 300px;
         }
@@ -32,6 +44,10 @@
 <body>
     <div class="box">
         <img class="img1" src="document (1).jpeg" alt="">
+    </div>
+
+    <div class="box">
+        <img class="img2" src="document (1).jpeg" alt="">
     </div>
 </body>
 </html>
