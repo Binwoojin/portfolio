@@ -17,7 +17,9 @@
             justify-content: space-around;
             align-items: center;
             background-color: aquamarine;
-            height: 100vh;
+            height: 100vh; 
+            /* 높이는 뷰포트의 높이만큼 늘리기 
+                (vh : viewport Height | vw : viewport Width) */
         }
 
         /* justify-content(가로축 정렬) */
@@ -33,6 +35,11 @@
         /* center와 baseline의 차이점 */
         /* center는 박스 기준 가운데 정렬 기능이며, 
             baseline은 글자 줄 기준 가운데 정렬 기능임 */
+
+        /* gap : flex나 grid에서 요소 사이 간격을 만드는 속성, 
+            margin-right 하나하나 안줘도 되서 실무에서 많이 사용함 
+            gap : (세로) (가로); */
+
         .flex-item {
             width: 80px;
             height: 80px;
