@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
         /* max-width: 최대값(이하) | min-width: 최소값(이상) */
-        @media (min-width: 400px) and (max-width:600px) {
+        @media all and (min-width: 400px) and (max-width:600px) {
             body {
                 background-color: lightblue;
             }
@@ -23,6 +23,9 @@
                 background-color: pink;
             }
         }
+
+        /* media (device) and */
+        /* device에 들어가는 속성 : all(모든 장치, 기본값), screen(모니터), print(프린트), speech(시각장애인용) */
         </style>
 </head>
 <body>
