@@ -32,14 +32,20 @@
             justify-content: center;
         }
         
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
         aside {
-            width: 200px;
+            width: 20%;
             padding: 10px;
             box-sizing: border-box;
         }
 
         section {
-            width: 500px;
+            width: 60%;
             
         }
 
