@@ -12,10 +12,27 @@
 
         .container {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: wrap; /* flex-wrap : flex 아이템들이 한 줄에 다 안 들어갈 때 어떻게 처리할지 정하는 속성 (nowrap(default) | wrap) */
+            flex-direction: row; /* flex-direction : 주축 방향.(row(default) | column) */
             justify-content: space-between;
             align-items: center;
+            background-color: aquamarine;
+            height: 600px;
         }
+
+        /* justify-content(가로축 정렬) */
+        /* center : 중앙 | end : 우측 
+        space-between : 양 끝 아이템을 부모 박스의 양쪽 끝에 붙이고, 
+        아이템 사이 공간만 균등하게 나눔
+        space-around : 각 아이템의 양 옆에 여백을 줘서 배치 */
+
+        /* align-items(세로축 정렬) */
+        /* flex-start : 위쪽 정렬 | center : 가운데 정렬 
+        flex-end : 아래쪽 정렬 | baseline : 글자의 기준선(baseline) 맞춤 */
+
+        /* center와 baseline의 차이점 */
+        /* center는 박스 기준 가운데 정렬 기능이며, 
+            baseline은 글자 줄 기준 가운데 정렬 기능임 */
         .flex-item {
             width: 80px;
             height: 80px;
