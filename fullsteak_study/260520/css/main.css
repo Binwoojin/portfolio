@@ -56,9 +56,9 @@
         /* float - 신문이나 잡지 레이아웃처럼 이미지를 텍스트 본문 한 쪽에 띄어주고 
                    그 주변에 텍스트가 자연스럽게 흐르도록 */
 
-        #footer {
-            clear: both; 
-            height: 200px;
+        footer {
+            padding: 20px;
+            text-align: center;
         }
 
         /* clear: both; - float 효과를 상쇄 */
