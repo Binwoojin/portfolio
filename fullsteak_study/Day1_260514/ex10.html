@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다양한입력요소</title>
+</head>
+<body>
+    <h3>다양한 입력 표현</h3>
+    <form action="next.html">
+        ID : <input type="text" name="id" id="id" placeholder="아이디를 입력하세요"><br>
+        PW : <input type="password" name="pw" id="pw"><br>
+
+        <input type="checkbox" name="quest1" value="1" id="quest1">1번 <br>
+        <input type="checkbox" name="quest2" value="2" id="quest2">2번 <br>
+
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male">남성</label>
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="female">여성</label><br>
+
+        생년월일 : <input type="date" name="time" id=""><br>
+
+        좋아하는 메뉴 :
+        <select name="menu" id="menu">
+            <option value="default">메뉴를 선택하세요</option>
+            <option value="송편">송편</option>
+            <option value="사과">사과</option>
+            <option value="배">배</option>
+            <option value="딸기">딸기</option>
+        </select><br>
+
+        <input type="submit" value="전송">
+    </form>
+</body>
+</html>

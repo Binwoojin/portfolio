@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- 외부 css 파일을 연결할 때는 link 태그를 사용합니다.
+    rel 속성은 연결된 파일의 유형을 지정하는데, 스타일 시트인 경우 
+    "stylesheet"로 설정합니다. href 속성은 연결할 CSS 파일의 경로를 
+    지정합니다. 
+    
+    외부 스타일 형식으로, CSS 파일을 별도의 .css 파일로 작성하여 
+    HTML 문서에 링크하는 방법입니다. 외부 스타일은 여러 HTML 문서에서 
+    재사용할 수 있으며, 유지보수가 용이합니다. 
+    
+    외부 스타일을 사용하려면 HTML 문서의 head 섹션에 link 태그를 
+    추가하여 CSS 파일을 연결해야 합니다. 예를 들어 
+    <link rel="stylesheet" href="styles.css">는 styles.css 파일을
+    HTML 문서에 연결하는 외부 스타일입니다. 
+    -->
+
+    <title>CSS란?</title>
+
+    <style>
+        /* css의 양식은 선택자 {속성: 값;}입니다. 
+         선택자는 스타일을 적용할 HTML 요소를 지정하고, 
+         속성은 스타일의 종류(예: color, font-size)를 나타내며, 
+         값은 해당 속성에 적용할 스타일의 구체적인 값을 의미합니다. 
+         예를 들어, p {color: red;}는 모든 p 요소의 텍스트 색상을 
+         빨간색으로 설정하는 CSS 규칙입니다. 
+
+         아래 예시에서는 table 요소에 대해 border 속성을 사용하여 
+         테두리를 설정하고, width 속성을 사용하여 테이블의 너비를 
+         지정했습니다. 
+
+         여기서 사용된 스타일은 인터널 스타일로, HTML 문서의 head 섹션 내에 
+         style 태그를 사용하여 작성된 CSS입니다. 인터널 스타일은 
+         해당 HTML 문서에만 적용되며, 외부 CSS 파일과 달리 다른 문서에서는 
+         재사용할 수 없습니다. 인터널 스타일은 HTML 요소에 직접 스타일을 
+         적용하는 인라인 스타일과 달리, 여러 요소에 공통된 스타일을 적용할 때 
+         유용합니다.
+        */
+        table {
+            text-align: center;
+            width: 300px;
+        }
+
+        h1 {
+            background-color: rgba(255, 118, 198, 0.5);
+        }
+
+        .google-link {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+    <h3>CSS(Cascade Style Sheet)</h3>
+    <p style="color:blue;">CSS(Cascade Style Sheet)</p>
+    <!-- 인라인 스타일 : HTML 요소에 직접 스타일을 적용하는 방법입니다. -->
+    <!-- style 속성 안에 CSS 규칙을 작성하여 요소의 스타일을 지정합니다. 
+        예를 들어, <p style="color:blue;">는 해당 p 요소의 텍스트 
+        색상을 파란색으로 설정하는 인라인 스타일입니다. -->
+
+    <table> 
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+
+    <hr>
+    <br>
+
+    네이버 링크 : <a href="http://www.naver.com" target="_blank" style="border: 1px solid green;">네이버 바로가기</a><br>
+    <!-- 구글 링크 : <a class="google-link" href="http://www.google.com" target="_blank">구글 바로가기</a> -->
+    <a class="other-google-link" href="http://www.google.com" target="_blank">구글 바로가기</a>
+
+
+
+</body>
+</html>

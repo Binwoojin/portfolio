@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            width: 250px;
+            height: 350px;
+        }
+
+        tr:nth-child(2n) {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        tr:nth-child(2n) td {
+            padding: 15px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><img src="img/movie1.jfif" alt="마이클"></td>
+            <td><img src="img/movie2.jfif" alt="악마는프라다를입는다2"></td>
+            <td><img src="img/movie3.jfif" alt="살목지"></td>
+            <td><img src="img/movie4.jfif" alt="슈퍼마리오갤럭시"></td>
+            <td><img src="img/movie5.jfif" alt="프로젝트헤일메리"></td>
+        </tr>
+        <tr>
+            <td>마이클</td>
+            <td>악마는 프라다를 입는다 2</td>
+            <td>살목지</td>
+            <td>슈퍼 마리오 갤럭시</td>
+            <td>프로젝트 헤일메리</td>
+        </tr>
+
+        <!-- tr>(td>img[src="img/movie$@6.jfif"])*5 -->
+        <tr>
+            <td><img src="img/movie6.jfif" alt="왕과사는남자"></td>
+            <td><img src="img/movie7.jfif" alt="교생실습"></td>
+            <td><img src="img/movie8.jfif" alt="짱구"></td>
+            <td><img src="img/movie9.jfif" alt="이프온리"></td>
+            <td><img src="img/movie10.jfif" alt="탑건매버릭"></td>
+        </tr>
+        <tr>
+            <td>왕과 사는 남자</td>
+            <td>교생실습</td>
+            <td>짱구</td>
+            <td>이프 온리</td>
+            <td>탑건:매버릭</td>
+        </tr>
+    </table>
+</body>
+</html>

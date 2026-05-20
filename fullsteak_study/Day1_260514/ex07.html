@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form : 사용자에게 입력을 받을 때 사용하는 태그
+        action : form 태그의 속성으로, 입력된 데이터를 전송할 URL을 지정하는 속성 
+        get 방식 : URL에 데이터를 붙여서 전송하는 방식, 보안에 취약하지만 간단한 데이터 전송에 적합
+        http 요청 방식 : get, post, put, delete, patch 등이 있음
+        -->
+    <h3>회원가입</h3>
+    <form action="next.html">
+        <label for="username">이름</label>
+        <input type="text" name="username" id="username"><br>
+
+        <label for="email">이메일</label>
+        <input type="email" name="email" id="email"><br>
+
+        <label for="birthdate">생년월일</label>
+        <input type="date" name="birthdate" id="birthdate"><br>
+
+        <input type="submit" value="가입">
+        <input type="reset" value="다시">
+    </form>
+</body>
+</html>

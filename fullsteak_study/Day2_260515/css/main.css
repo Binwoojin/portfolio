@@ -1,0 +1,40 @@
+h3 {
+    background-color: magenta;
+}
+
+table {
+    border: none;
+    border-top: 1px solid black;
+}
+
+table:nth-last-of-type(1) {
+    border-bottom: 1px solid black;
+}
+
+/* 순서 css 타입 (nth-child, nth-last-child, nth-of-type, nth-last-of-type)
+
+1. nth-child: 부모 요소의 자식 요소 중에서 n번째 요소를 선택합니다. 
+(인덱스는 1부터 시작)
+
+2. nth-last-child: 부모 요소의 자식 요소 중에서 뒤에서 n번째 요소를 
+선택합니다. (인덱스는 1부터 시작)
+
+3. nth-of-type: 부모 요소의 자식 요소 중에서 n번째 특정 유형의 요소를 
+선택합니다. (인덱스는 1부터 시작)
+
+4. nth-last-of-type: 부모 요소의 자식 요소 중에서 뒤에서 n번째 
+특정 유형의 요소를 선택합니다. (인덱스는 1부터 시작) 
+
+
+인라인 스타일과 인터널 스타일, 외부 스타일 우선순위
+1. 인라인 스타일: HTML 요소의 style 속성에 직접 작성된 스타일입니다.
+2. 인터널 스타일: HTML 문서의 <head> 섹션에 <style> 태그 내에 작성된 스타일입니다.
+3. 외부 스타일: 별도의 CSS 파일에 작성된 스타일로, HTML 문서에서 <link> 태그를 
+              사용하여 연결됩니다.
+
+우선순위: 인라인 스타일 > 인터널 스타일 > 외부 스타일
+*/
+
+.other-google-link {
+    border: 3px dotted blue;
+}

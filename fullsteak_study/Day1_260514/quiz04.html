@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가입신청서</title>
+</head>
+<body>
+    <h1 style="text-align: center;">가입신청서</h1>
+    <form action="next.html" style="margin: 0 auto; width:85%;">
+        <label for="id" style="width: 30%; display: inline-block;"><strong>ID:</strong></label>
+        <input type="text" name="id" id="id"><br>
+
+        <label for="name" style="width: 30%; display: inline-block;"><strong>NAME:</strong></label>
+        <input type="text" name="name" id="name"><br>
+
+        <label for="pnum" style="width: 30%; display: inline-block;"><strong>주민등록번호:</strong></label>
+        <input type="text" name="pnum" id="pnumfirst"> - <input type="password" name="pnum" id="pnumback"><br>
+
+        <label for="password" style="width: 30%; display: inline-block;"><strong>비밀번호:</strong></label>
+        <input type="password" name="password" id="password"><br>
+
+        <label for="phone" style="width: 30%; display: inline-block;"><strong>전화번호:</strong></label>
+        <input type="text" name="phone1" id="phone1" style="width: 100px;"> - <input type="text" name="phone2" id="phone2" style="width: 100px;"> - <input type="text" name="phone3" id="phone3" style="width: 100px;"><br> 
+
+        <label for="address" style="width: 30%; display: inline-block;"><strong>주소:</strong></label>
+        <input type="text" name="address" id="address"><br>
+
+        <label for="email" style="width: 30%; display: inline-block;"><strong>이메일:</strong></label>
+        <input type="text" name="emailid" id="emailid">@
+        <input type="text" name="emailaddr" id="emailaddr">
+        <select name="emaildomain" id="emaildomain">
+            <option value="">직접입력</option>
+            <option value="naver.com">naver.com</option>
+            <option value="gmail.com">gmail.com</option>
+            <option value="daum.net">daum.net</option>
+        </select><br>
+
+        <label for="gender" style="width: 30%; display: inline-block;"><strong>성별:</strong></label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">남성</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">여성</label><br>
+
+        <label for="hobbies" style="width: 30%; display: inline-block;"><strong>좋아하는 취미:</strong></label>
+        <input type="checkbox" name="music" id="music"> 음악감상
+        <input type="checkbox" name="books" id="books"> 독서
+        <input type="checkbox" name="sports" id="sports"> 운동<br>  
+
+        <input type="submit" value="가입하기">
+        <input type="reset" value="취소하기">
+    </form>
+</body>
+</html>
