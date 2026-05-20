@@ -1,19 +1,35 @@
 /* Web Fonts */
         @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
+        body {
+            margin: 0;
+            padding: 0;
+        }        
+
         #container {
             width: 900px;
             margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
         }
 
-        #header {
-            background-color: silver;
-            color: white;
+        header {
+            /* background-color: silver; */
             height: 200px;
         }
 
-        img {
-            width: 900px;
+        header img {
+            width: 100%;
+            display: block;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            padding: 10px;
+            justify-content: center;
         }
         
         #sidebar1 {
