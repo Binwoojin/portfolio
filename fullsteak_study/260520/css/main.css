@@ -32,19 +32,19 @@
             justify-content: center;
         }
         
-        #sidebar1 {
+        aside {
             width: 200px;
-            float: left;
+            padding: 10px;
+            box-sizing: border-box;
         }
 
-        #contents {
+        section {
             width: 500px;
-            float: left;
+            
         }
 
-        #sidebar2 {
-            width: 200px;
-            float: left;
+        .right_side {
+            background-color:cornsilk;
         }
 
         /* float - 신문이나 잡지 레이아웃처럼 이미지를 텍스트 본문 한 쪽에 띄어주고 
@@ -72,7 +72,7 @@
         }
 
         .button:active {
-            background-color: lightskyblue;
+            /* background-color: lightskyblue; */
             color: black;
             position: relative;
             top: 3px;
