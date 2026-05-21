@@ -1,0 +1,23 @@
+/* Corss Browsing */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ccc;
+}
+
+.form {
+    background-color: white;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 0 8px #333;
+    
+}
